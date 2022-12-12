@@ -5,13 +5,12 @@ body {
   margin: 0;
 }
 
-button:hover{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
 
-
-.title{
-    padding-bottom: 15px;
+.title {
+  padding-bottom: 15px;
 }
 .original__movies {
   padding: 20px, 0, 20px, 0;
@@ -70,12 +69,12 @@ img {
 }
 
 .featured {
-  height: 250px;
+  height: 450px;
   position: relative;
   background-image: url("stranger-things.jpg");
   background-size: cover;
   background-position: center;
-  padding: 250px 0 0 30px;
+  padding: 230px 0 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,6 +101,7 @@ img {
 }
 
 .featured h2 {
+  letter-spacing: 3px;
   font-size: 50px;
   margin: 0;
   z-index: 10;
