@@ -18,56 +18,82 @@
   <body>
     <header></header>
     <main>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="featured">
-                    <h2 class="title">STRANGER THINGS</h2>
-                    <div class="featured__buttons">
-                      <button class="button__play"><i class="fas fa-play"></i>Play</button>
-                      <button>My List</button>
-                    </div>
-                    <div class="featured__description">
-                      Strange sightings. Government secrets. Fearless kids. And a dark force
-                      that turns a small town upside down......
-                    </div>
-                </div>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="featured">
+              <h2 class="title">STRANGER THINGS</h2>
+              <div class="featured__buttons">
+                <button class="button__play">
+                  <i class="fas fa-play"></i>Play
+                </button>
+                <button>My List</button>
               </div>
-              <div class="carousel-item">
-                <div class="featured" style="background-image: url('money-heist-cover-img.jpg');">
-                    <h2 class="title">MONEY HEIST</h2>
-                    <div class="featured__buttons">
-                      <button class="button__play"><i class="fas fa-play"></i>Play</button>
-                      <button>My List</button>
-                    </div>
-                    <div class="featured__description">
-                        Eight thieves take hostages and lock themselves in the Royal Mint of Spain
-                        as a criminal mastermind manipu....
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="featured" style="background-image: url('sacred-games.jpg');">
-                    <h2 class="title" style="font-size: 35px;">SACRED GAMES</h2>
-                    <div class="featured__buttons">
-                      <button class="button__play"><i class="fas fa-play"></i>Play</button>
-                      <button>My List</button>
-                    </div>
-                    <div class="featured__description">
-                      THE RIGHTEOUS. THE RUTHLESS. EVERYONE WANTS TO PLAY.
-                </div>
+              <div class="featured__description">
+                Strange sightings. Government secrets. Fearless kids. And a dark
+                force that turns a small town upside down......
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <div class="carousel-item">
+            <div
+              class="featured"
+              style="background-image: url('money-heist-cover-img.jpg')"
+            >
+              <h2 class="title">MONEY HEIST</h2>
+              <div class="featured__buttons">
+                <button class="button__play">
+                  <i class="fas fa-play"></i>Play
+                </button>
+                <button>My List</button>
+              </div>
+              <div class="featured__description">
+                Eight thieves take hostages and lock themselves in the Royal
+                Mint of Spain as a criminal mastermind manipu....
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="featured"
+              style="background-image: url('sacred-games.jpg')"
+            >
+              <h2 class="title" style="font-size: 35px">SACRED GAMES</h2>
+              <div class="featured__buttons">
+                <button class="button__play">
+                  <i class="fas fa-play"></i>Play
+                </button>
+                <button>My List</button>
+              </div>
+              <div class="featured__description">
+                THE RIGHTEOUS. THE RUTHLESS. EVERYONE WANTS TO PLAY.
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
 
       <div class="netflixOriginals">
         <div class="original__header">
@@ -96,6 +122,40 @@
         </div>
       </div>
     </main>
+    <div
+      class="modal fade"
+      id="trailerModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span class="movieNotFound">Trailer Not Found</span>
+            <iframe
+              id="movieTrailer"
+              height="400"
+              src=""
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
