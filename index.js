@@ -113,7 +113,6 @@ const handleMovieSelection = e => {
       })
       setTrailer(youtubeTrailers)
     })
-  
     // open modal
     $('#trailerModal').modal('show')
     // we need to call the api with the ID
