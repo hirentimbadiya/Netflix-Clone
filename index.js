@@ -1,4 +1,3 @@
-
 // Call the main functions the page is loaded
 window.onload = () => {
     getOriginals()
@@ -105,9 +104,9 @@ const handleMovieSelection = e => {
         const results = data.results
         const youtubeTrailers = results.filter(result => {
             if (result.site == 'YouTube' && result.type == 'Trailer') {
-                return true
+                return true;
             } else {
-                return false
+                return false;
             }
         })
         setTrailer(youtubeTrailers)
