@@ -6,22 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix India - Watch TV Shows Online , Watch Movies Online</title>
     <link rel="shortcut icon" href="netflix-logo.png" type="image/x-icon" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
     <main>
-      <div class="featured">
-        <h2 class="title">Stranger Things</h2>
-        <div class="featured__buttons">
-          <button class="button__play"><i class="fas fa-play"></i>Play</button>
-          <button>My List</button>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="featured">
+                    <h2 class="title">STRANGER THINGS</h2>
+                    <div class="featured__buttons">
+                      <button class="button__play"><i class="fas fa-play"></i>Play</button>
+                      <button>My List</button>
+                    </div>
+                    <div class="featured__description">
+                      Strange sightings. Government secrets. Fearless kids. And a dark force
+                      that turns a small town upside down......
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="featured" style="background-image: url('money-heist-cover-img.jpg');">
+                    <h2 class="title">MONEY HEIST</h2>
+                    <div class="featured__buttons">
+                      <button class="button__play"><i class="fas fa-play"></i>Play</button>
+                      <button>My List</button>
+                    </div>
+                    <div class="featured__description">
+                        Eight thieves take hostages and lock themselves in the Royal Mint of Spain
+                        as a criminal mastermind manipu....
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="featured" style="background-image: url('sacred-games.jpg');">
+                    <h2 class="title" style="font-size: 30px;">SACRED GAMES</h2>
+                    <div class="featured__buttons">
+                      <button class="button__play"><i class="fas fa-play"></i>Play</button>
+                      <button>My List</button>
+                    </div>
+                    <div class="featured__description">
+                      THE RIGHTEOUS. THE RUTHLESS. EVERYONE WANTS TO PLAY.
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="featured__description">
-          Strange sightings. Government secrets. Fearless kids.
-          And a dark force that turns a small town upside down......
-        </div>
-      </div>
+
       <div class="netflixOriginals">
         <div class="original__header">
           <h2>NETFLIX ORIGINALS</h2>
@@ -54,9 +101,10 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
