@@ -103,20 +103,20 @@ const handleMovieSelection = e => {
     const iframe = document.getElementById('movieTrailer')
     // here we need the id of the movie
     getMovieTrailer(id).then(data => {
-      const results = data.results
-      const youtubeTrailers = results.filter(result => {
-        if (result.site == 'YouTube' && result.type == 'Trailer') {
-          return true
-        } else {
-          return false
-        }
-      })
-      setTrailer(youtubeTrailers)
+        const results = data.results
+        const youtubeTrailers = results.filter(result => {
+            if (result.site == 'YouTube' && result.type == 'Trailer') {
+                return true
+            } else {
+                return false
+            }
+        })
+        setTrailer(youtubeTrailers)
     })
     // open modal
     $('#trailerModal').modal('show')
     // we need to call the api with the ID
-  }
+}
 
 
 
