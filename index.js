@@ -62,7 +62,6 @@ function getTopRated() {
     fetchMovies(url, '#top_rated', 'backdrop_path');
 }
 
-// ** BONUS **
 
 // ** Fetches URL provided and returns response.json()
 async function getMovieTrailer(id) {
