@@ -8,6 +8,8 @@ window.onload = () => {
 // ** Helper function that makes dynamic API calls **
 function fetchMovies(url, dom_element, path_type) {
     // Use Fetch with the url passed down 
+    // Within Fetch get the response and call showMovies() with the data ,
+    // dom_element, and path type
     fetch(url)
         .then(response => {
             if (response.ok) {
@@ -21,7 +23,6 @@ function fetchMovies(url, dom_element, path_type) {
         }).catch(error => {
             console.log(error);
         })
-    // Within Fetch get the response and call showMovies() with the data , dom_element, and path type
 }
 
 //  ** Function that displays the movies to the DOM **
