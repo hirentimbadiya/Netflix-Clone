@@ -98,7 +98,6 @@ const setTrailer = trailers => {
 
 const handleMovieSelection = e => {
     const id = e.target.getAttribute('data-id')
-    const iframe = document.getElementById('movieTrailer')
     // here we need the id of the movie
     getMovieTrailer(id).then(data => {
         const results = data.results
