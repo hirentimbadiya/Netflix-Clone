@@ -81,7 +81,7 @@ const setTrailer = trailers => {
     // Set up iframe variable to hold id of the movieTrailer Element
     const iframe = document.getElementById('movieTrailer');
     // Set up variable to select .movieNotFound element
-    const movieNotFound = document.querySelector('movieNotFound');
+    const movieNotFound = document.querySelector('.movieNotFound');
     // If there is a trailer add the src for it
     if (trailers.length > 0) {
         // add d-none class to movieNotFound and remove it from iframe
@@ -98,6 +98,7 @@ const setTrailer = trailers => {
 
 const handleMovieSelection = e => {
     const id = e.target.getAttribute('data-id')
+    const iframe = document.getElementById('movieTrailer')
     // here we need the id of the movie
     getMovieTrailer(id).then(data => {
         const results = data.results
