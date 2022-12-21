@@ -39,7 +39,7 @@ img {
 .movies__container {
   padding-left: 50px;
   display: flex;
-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   overflow-x: scroll;
 }
 
@@ -179,5 +179,5 @@ flex-wrap: nowrap;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
